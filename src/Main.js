@@ -79,10 +79,10 @@ export default class Main extends Component {
 
                         <View style={{ ...styles.spacing, padding: 5, top: -100, }}>
                             <View style={{ flexDirection: 'row', alignItems: 'center', maxHeight: 35, top: 6 }} >
-                                <View style={{ flex: 6, }} />
+                                <View style={{ flex: 5, }} />
                                 <TouchableOpacity onPress={this.HandleClick} style={{ flex: 4, padding: 5, alignSelf: 'stretch', flexDirection: 'row-reverse', alignItems: 'center', backgroundColor: 'white', borderTopLeftRadius: 6, borderTopRightRadius: 6, }}>
-                                    <Text style={{ ...styles.show, }}> {isShow ? 'Hide' : 'Show'} card number </Text>
-                                    <Image source={User} style={{ width: 15, height: 15, resizeMode: 'contain', }} />
+                                    <Text style={{ flex: 8, ...styles.show, }}> {isShow ? 'Hide' : 'Show'} card number </Text>
+                                    <Image source={User} style={{ flex: 2, width: 15, height: 15, resizeMode: 'contain', }} />
                                 </TouchableOpacity>
                             </View>
                             <Card isShow={isShow} />
