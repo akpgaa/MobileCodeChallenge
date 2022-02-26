@@ -76,7 +76,6 @@ export default class Main extends Component {
 
 
                     <View style={{ ...styles.spacing, backgroundColor: "#FFFFFF", borderTopLeftRadius: 20, borderTopRightRadius: 20, padding: 24 }}>
-
                         <View style={{ ...styles.spacing, padding: 5, top: -100, }}>
                             <View style={{ flexDirection: 'row', alignItems: 'center', maxHeight: 35, top: 6 }} >
                                 <View style={{ flex: 5, }} />
@@ -87,7 +86,6 @@ export default class Main extends Component {
                             </View>
                             <Card isShow={isShow} />
                         </View>
-
                         <View style={{ flex: 1, top: -100 }}>
                             {
                                 this.props.isChecked ?
@@ -130,15 +128,11 @@ export default class Main extends Component {
                             }
                         </View>
                     </View>
-
                 </ScrollView>
             </SafeAreaView >
         )
     }
 }
-
-
-
 const styles = StyleSheet.create({
     spacing: {
         marginVertical: 5

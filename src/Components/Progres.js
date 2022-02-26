@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Animated, StyleSheet, Text, View, } from 'react-native';
-
+import { Animated, StyleSheet,  View, } from 'react-native';
 
 class Progressbar extends Component {
     render() {
@@ -17,10 +16,7 @@ const styles = StyleSheet.create({
         height: 15,
         flexDirection: "row",
         width: '100%',
-        backgroundColor: '#deffe7',
-        // borderColor: 'transaparent',
-        // borderWidth: 1,
-        // borderRadius: 15
+        backgroundColor: '#deffe7',       
     }
 });
 export default Progressbar

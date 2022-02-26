@@ -1,15 +1,11 @@
 
-import { Text, StyleSheet, Modal, View, SafeAreaView, ScrollView, Image, KeyboardAvoidingView, Switch, FlatList, TouchableOpacity, TextInput, Dimensions, ActivityIndicator, } from 'react-native'
+import { Text, StyleSheet, Modal, View, SafeAreaView, ScrollView, Image, KeyboardAvoidingView, TouchableOpacity, TextInput, ActivityIndicator, } from 'react-native'
 import React, { Component } from 'react'
-import User from './Assets/user.png';
+
 import Back from './Assets/back.png';
 import Car from './Assets/pickup-car.png';
 import Aspire from './Assets/aspire.png'
 import { Toast } from './Components/Toast';
-
-const Width = Dimensions.get('window').width;
-const Height = Dimensions.get('window').height;
-
 export default class SpendingLimit extends Component {
     constructor(props) {
         super(props)
@@ -22,12 +18,10 @@ export default class SpendingLimit extends Component {
     }
     render() {
         let { text, disabled } = this.state;
-
         return (
             <KeyboardAvoidingView
                 behavior={Platform.OS === "ios" ? "padding" : "height"}
-                style={{ flex: 1, }}
-            >
+                style={{ flex: 1, }} >
                 <SafeAreaView style={{ flex: 1, backgroundColor: "#0C365A" }}>
                     <ScrollView style={{ flex: 1, flexDirection: 'row' }} horizontal={false} >
                         <View style={{ flex: 1, ...styles.spacing, padding: 24, marginBottom: 50, }}>
@@ -41,11 +35,8 @@ export default class SpendingLimit extends Component {
                                     </TouchableOpacity>
                                 </View>
                             </View>
-
                             <Text style={{ ...styles.heading, paddingVertical: 20 }}>Spending Limit</Text>
                         </View>
-
-
                         <View style={{ flex: 4, ...styles.spacing, backgroundColor: "#FFFFFF", borderTopLeftRadius: 20, borderTopRightRadius: 20, padding: 24 }}>
                             <View style={{ flex: 2 }} >
                                 <View style={{ flexDirection: 'row', paddingVertical: 10 }} >
@@ -56,7 +47,6 @@ export default class SpendingLimit extends Component {
                                     <TouchableOpacity style={{ flex: 1, ...styles.center, backgroundColor: '#01D167', borderRadius: 5, }}>
                                         <Text style={{ ...styles.textButton, color: '#FFFFFF' }}>  S$  </Text>
                                     </TouchableOpacity>
-                                    {/* <Text style={{ ...styles.heading, }}>   3,000 </Text> */}
                                     <TextInput
                                         style={{ flex: 10, fontSize: 30, fontWeight: 'bold', }}
                                         onChangeText={this.onChangeText}
@@ -64,12 +54,7 @@ export default class SpendingLimit extends Component {
                                         keyboardType='number-pad'
                                     />
                                 </View>
-                                <View
-                                    style={{
-                                        borderBottomColor: '#E5E5E5',
-                                        borderBottomWidth: 1,
-                                    }}
-                                />
+                                <View style={{ borderBottomColor: '#E5E5E5', borderBottomWidth: 1, }} />
                                 <Text style={{ fontSize: 13, paddingVertical: 10, color: '#22222266' }}>Here weekly means the last 7 days - not the calendar week</Text>
                                 <View style={{ padding: 5, flexDirection: 'row', justifyContent: 'space-between' }}>
                                     <TouchableOpacity style={{ ...styles.center, marginHorizontal: 5, backgroundColor: '#deffe7', padding: 5, borderRadius: 5 }}
@@ -115,14 +100,12 @@ export default class SpendingLimit extends Component {
                                 }
                             </View>
                         </View>
-
                     </ScrollView>
                 </SafeAreaView >
             </KeyboardAvoidingView >
         )
     }
 }
-
 
 
 const styles = StyleSheet.create({

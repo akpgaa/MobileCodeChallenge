@@ -1,7 +1,6 @@
 
-import { Text, StyleSheet, Modal, View, SafeAreaView, ScrollView, Image, Switch, FlatList, TouchableOpacity, TextInput, Dimensions, } from 'react-native'
+import { Text, StyleSheet, View, SafeAreaView, Image, } from 'react-native'
 import React from 'react'
-import Insight from './Assets/Insight.png';
 import Visa from './Assets/visa.png';
 import Aspire from './Assets/AspireLogo.png';
 
@@ -38,10 +37,6 @@ export default function Card(props) {
         </SafeAreaView>
     )
 }
-
-
-
-
 const styles = StyleSheet.create({
     spacing: {
         marginVertical: 5

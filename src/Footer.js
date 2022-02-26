@@ -4,16 +4,8 @@ import User from './Assets/user.png';
 import Debit from './Assets/Debit.png';
 import Pay from './Assets/Payments.png';
 export default class Footer extends Component {
-    constructor(props) {
-        super(props);
-    }
-    goto = here => {
-        if (this.props.selected !== here) {
-            this.props.goto(here);
-        }
-    }
     render() {
-        let active = this.props.selected;
+
         return (
             <View style={{ position: 'absolute', bottom: 0, width: '100%', flexDirection: 'row', backgroundColor: '#FFF', paddingBottom: 5, paddingTop: 5, height: 60 }}>
                 <TouchableOpacity style={{ flex: 1, ...Style.center }} activeOpacity={1}>
