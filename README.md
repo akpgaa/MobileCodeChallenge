@@ -4,7 +4,8 @@ https://user-images.githubusercontent.com/46481890/155826438-c72d52b2-0d24-4961-
 
 
 Note: Not used any packages.
-Tested in Android Muliple Screens .
+Tested in Android Muliple Screens.
+The API Call in this App will return random number between 0 to the Spending limit that was enters by User.
 
 
 ------------------------------------
