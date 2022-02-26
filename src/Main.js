@@ -69,7 +69,7 @@ export default class Main extends Component {
                                 <TouchableOpacity style={{ ...styles.center, marginVertical: 3, backgroundColor: '#01D167', paddingHorizontal: 8, borderRadius: 5 }}>
                                     <Text style={{ ...styles.textButton, color: '#FFFFFF' }}>  S$  </Text>
                                 </TouchableOpacity>
-                                <Text style={{ ...styles.heading, }}>   3,000 </Text>
+                                <Text style={{ ...styles.heading, }}>   {Limit} </Text>
                             </View>
                         </View>
                     </View>
